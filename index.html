@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriflame</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./icons/css/all.min.css" />
+    <link rel="stylesheet" href="./icons/css/all.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+</head>
+
+<body>
+    <!--start making Oriflame project-->
+    <div class="wrapper">
+      <!--start making menu-->
+      <div class="menu w-full h-auto shadow-xl flex flex-row">
+        <div class="basis-1/3">
+          <nav class="relative py-4 flex justify-around items-center bg-white">
+            <div>
+              <button
+                class="navbar-burger flex items-center text-neutral-400 bg-white border-none"
+              >
+                <svg
+                  class="block h-5 w-5 fill-current cursor-pointer"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <i
+                class="far fa-user h-7 cursor-pointer text-lg text-neutral-400 hover:font-bold hidden xl:block lg:block 2xl:block"
+              ></i>
+            </div>
+            <div class="hidden xl:block lg:block 2xl:block">
+              <a href="#" class="text-neutral-400 no-underline">Our Story</a>
+            </div>
+            <div class="hidden xl:block lg:block 2xl:block">
+              <a href="#" class="text-neutral-400 no-underline">Join Us</a>
+            </div>
+          </nav>
+          <div class="navbar-menu relative z-50 hidden">
+            <div
+              class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
+            ></div>
+            <nav
+              class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+            >
+              <div class="flex items-center">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                  <svg class="h-12" alt="logo">
+                    <path
+                      xmlns="http://www.w3.org/2000/svg"
+                      d="M57.98 28.94l-1.595-4.904h-.98L53.81 28.94l-1.593-4.91h-1.23l2.206 6.62h.98l1.716-4.66 1.59 4.66h.98l2.2-6.62h-1.22zM1.334 26.857h33.35v.98H1.334v-.98zm41.318-24.89h2.207v14.59h-2.21V1.967zm10.544 14.59h2.207v-6.13h7.602V8.343h-7.61V3.93h8.46V1.966h-10.66zM8.324 16.8c4.66 0 8.46-3.8 8.46-8.46 0-4.534-3.8-6.62-6.62-6.62-5.518 0-5.886 5.396-5.886 5.396h.13s.98-3.923 4.78-3.923c3.07 0 5.4 2.084 5.4 5.027 0 3.43-2.82 6.25-6.25 6.25-3.31 0-6.372-2.45-6.372-6.87 0-3.44 1.84-6.26 5.027-7.48V0C2.947.61.003 4.17.003 8.33c-.122 4.66 3.68 8.46 8.338 8.46zm36.78 10.056c-1.225-.245-1.593-.49-1.593-.98s.37-.737 1.11-.737c.62 0 1.23.24 1.72.61l.617-.85c-.613-.49-1.47-.86-2.33-.86-1.35 0-2.207.74-2.207 1.96s.73 1.6 2.2 1.96c1.22.25 1.47.49 1.47.98s-.49.86-1.1.86c-.86 0-1.47-.37-2.09-.86l-.74.86c.735.74 1.716 1.11 2.696 1.11 1.35 0 2.33-.73 2.33-1.96 0-1.35-.738-1.84-2.086-2.08zm-9.317-10.3l-4.414-5.884c2.207-.61 3.678-2.2 3.678-4.29 0-2.69-2.2-4.53-5.39-4.53h-6.38v14.59h2.2v-5.4h3.55l4.05 5.4 2.7.126zm-10.3-7.48V3.93h4.047c2.084 0 3.31.86 3.31 2.453s-1.35 2.575-3.31 2.575h-4.047zm40.706 18.76h3.31v-1.102h-3.31V25.14h3.678v-1.103h-4.78v6.498h4.78v-.98H66.2zM91.817 1.844l-6.62 14.713h2.33l1.715-3.8h7.11l1.595 3.8h2.452L93.78 1.844h-1.964zm-1.838 8.95l2.69-6.252 2.69 6.26h-5.4zm18.14-5.026l4.66 6.866.24.368.24-.36 4.536-6.86v10.79h2.207v-14.6h-2.084l-4.904 7.356-4.906-7.356h-2.08v14.59h2.085zm0 21.088h30.89v.98h-30.89v-.98zm22.19-12.383v-4.29h7.6V8.098h-7.6v-4.17h8.58v-1.96h-10.78v14.59h10.79V14.47zM98.93 28.57l-3.557-4.534H94.27v6.498h1.226v-4.536l3.55 4.536h.98v-6.498h-1.1zM72.936 1.968h-2.084v14.59h10.054v-2.084h-7.97zm13.12 25.87h3.31v-1.103h-3.31V25.14h3.677v-1.103H84.95v6.498h4.905v-.98h-3.81zm-9.197-3.8H74.4v6.497h2.453c2.083 0 3.432-1.47 3.432-3.31.122-1.717-1.35-3.188-3.434-3.188zm0 5.516h-1.35V25.14h1.35c1.35 0 2.2.98 2.2 2.206.12 1.226-.86 2.207-2.21 2.207z"
+                    ></path>
+                  </svg>
+                </a>
+                <button class="navbar-close border-none bg-white">
+                  <svg
+                    class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div>
+                <ul>
+                  <li class="mb-1">
+                    <a
+                      class="block p-3 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-gray-600 rounded no-underline"
+                      href="#"
+                      >Best Offers</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-3 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-gray-600 rounded no-underline"
+                      href="#"
+                      >eCatalogue</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-3 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-gray-600 rounded no-underline"
+                      href="#"
+                      >Inspiration</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-3 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-gray-600 rounded no-underline"
+                      href="#"
+                      >Skin care</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-3 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-gray-600 rounded no-underline"
+                      href="#"
+                      >Make UP</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-3 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-gray-600 rounded no-underline"
+                      href="#"
+                      >Fragrance</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-3 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-gray-600 rounded no-underline"
+                      href="#"
+                      >Bath & Body</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-3 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-gray-600 rounded no-underline"
+                      href="#"
+                      >Hair</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-3 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-gray-600 rounded no-underline"
+                      href="#"
+                      >ACCESSORIES</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-3 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-gray-600 rounded no-underline"
+                      href="#"
+                      >Wellness</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-3 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-gray-600 rounded no-underline"
+                      href="#"
+                      >Men</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      class="block p-3 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-gray-600 rounded no-underline"
+                      href="#"
+                      >Kids & Baby</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="basis-1/3">
+          <div class="flex justify-center pl-20 mt-4">
+            <a class="text-3xl font-bold leading-none" href="#">
+              <svg class="h-10" alt="logo">
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M57.98 28.94l-1.595-4.904h-.98L53.81 28.94l-1.593-4.91h-1.23l2.206 6.62h.98l1.716-4.66 1.59 4.66h.98l2.2-6.62h-1.22zM1.334 26.857h33.35v.98H1.334v-.98zm41.318-24.89h2.207v14.59h-2.21V1.967zm10.544 14.59h2.207v-6.13h7.602V8.343h-7.61V3.93h8.46V1.966h-10.66zM8.324 16.8c4.66 0 8.46-3.8 8.46-8.46 0-4.534-3.8-6.62-6.62-6.62-5.518 0-5.886 5.396-5.886 5.396h.13s.98-3.923 4.78-3.923c3.07 0 5.4 2.084 5.4 5.027 0 3.43-2.82 6.25-6.25 6.25-3.31 0-6.372-2.45-6.372-6.87 0-3.44 1.84-6.26 5.027-7.48V0C2.947.61.003 4.17.003 8.33c-.122 4.66 3.68 8.46 8.338 8.46zm36.78 10.056c-1.225-.245-1.593-.49-1.593-.98s.37-.737 1.11-.737c.62 0 1.23.24 1.72.61l.617-.85c-.613-.49-1.47-.86-2.33-.86-1.35 0-2.207.74-2.207 1.96s.73 1.6 2.2 1.96c1.22.25 1.47.49 1.47.98s-.49.86-1.1.86c-.86 0-1.47-.37-2.09-.86l-.74.86c.735.74 1.716 1.11 2.696 1.11 1.35 0 2.33-.73 2.33-1.96 0-1.35-.738-1.84-2.086-2.08zm-9.317-10.3l-4.414-5.884c2.207-.61 3.678-2.2 3.678-4.29 0-2.69-2.2-4.53-5.39-4.53h-6.38v14.59h2.2v-5.4h3.55l4.05 5.4 2.7.126zm-10.3-7.48V3.93h4.047c2.084 0 3.31.86 3.31 2.453s-1.35 2.575-3.31 2.575h-4.047zm40.706 18.76h3.31v-1.102h-3.31V25.14h3.678v-1.103h-4.78v6.498h4.78v-.98H66.2zM91.817 1.844l-6.62 14.713h2.33l1.715-3.8h7.11l1.595 3.8h2.452L93.78 1.844h-1.964zm-1.838 8.95l2.69-6.252 2.69 6.26h-5.4zm18.14-5.026l4.66 6.866.24.368.24-.36 4.536-6.86v10.79h2.207v-14.6h-2.084l-4.904 7.356-4.906-7.356h-2.08v14.59h2.085zm0 21.088h30.89v.98h-30.89v-.98zm22.19-12.383v-4.29h7.6V8.098h-7.6v-4.17h8.58v-1.96h-10.78v14.59h10.79V14.47zM98.93 28.57l-3.557-4.534H94.27v6.498h1.226v-4.536l3.55 4.536h.98v-6.498h-1.1zM72.936 1.968h-2.084v14.59h10.054v-2.084h-7.97zm13.12 25.87h3.31v-1.103h-3.31V25.14h3.677v-1.103H84.95v6.498h4.905v-.98h-3.81zm-9.197-3.8H74.4v6.497h2.453c2.083 0 3.432-1.47 3.432-3.31.122-1.717-1.35-3.188-3.434-3.188zm0 5.516h-1.35V25.14h1.35c1.35 0 2.2.98 2.2 2.206.12 1.226-.86 2.207-2.21 2.207z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="basis-1/4 flex justify-around">
+          <div class="flex justify-center">
+            <div class="mb-3 hidden xl:block lg:block 2xl:block">
+              <div class="relative mt-4 flex w-full flex-wrap items-stretch">
+                <input
+                  type="search"
+                  class="relative m-0 block w-[1%] min-w-0 flex-auto border border-solid border-neutral-200 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200 bg-white rounded-full"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="button-addon1"
+                />
+                <button
+                  class="absolute z-[2] bg-white border-none top-2 right-4"
+                  type="button"
+                  id="button-addon1"
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a
+            href=""
+            class="py-5 h-5 text-xl text-neutral-500 hover:text-neutral-400"
+            ><i class="fa fa-shopping-bag"></i
+          ></a>
+        </div>
+      </div>
+      <!--end making menu-->
+      <!--start making slider-->
+      <!-- Swiper -->
+      <div class="swiper mySwiper w-full h-full">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide bg-center bg-cover text-center bg-white items-center justify-center text-sm"
+          >
+            <img src="./images/slider/slider1.jpeg" class="block w-full" />
+            <div
+              class="hidden lg:block xl:block 2xl:block md:block absolute top-20 right-10 lg:text-sm xl:text-lg 2xl:text-lg md:text-xs text-neutral-600 font-sans"
+            >
+              <h4 class="mb-2">International Women's DAY</h4>
+              <h1 class="mb-4">ENDLESS WAYS TO CELEBRATE</h1>
+              <a
+                href="#"
+                class="p-2 rounded-2xl no-underline text-white hover:bg-slate-400 bg-slate-600 hover:text-white transition-all text-sm"
+                >CLICK TO OFFERS</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide bg-center bg-cover">
+            <img src="./images/slider/slider2.jpeg" class="block w-full" />
+
+            <div
+              class="hidden lg:block xl:block 2xl:block md:block text-center absolute top-20 right-10 lg:text-sm xl:text-lg 2xl:text-lg md:text-xs text-white font-sans"
+            >
+              <h4 class="mb-2">International Women's DAY</h4>
+              <h1 class="mb-4">ENDLESS WAYS TO CELEBRATE</h1>
+              <a
+                href="#"
+                class="p-2 rounded-2xl no-underline text-white hover:bg-rose-200 bg-rose-700 hover:text-rose-800 transition-all text-sm"
+                >CLICK TO OFFERS
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide bg-center bg-cover">
+            <img src="./images/slider/slider3.jpeg " class="block w-full" />
+            <div
+              class="hidden lg:block xl:block 2xl:block md:block absolute top-20 right-10 lg:text-sm xl:text-lg 2xl:text-lg md:text-xs text-neutral-600 font-sans text-center"
+            >
+              <h4 class="mb-2">New SPRING COLLECTIONS</h4>
+              <h1 class="mb-4">RENEW YOUR ENERGY WITH NORRSKIN</h1>
+              <a
+                href="#"
+                class="p-2 rounded-2xl no-underline text-white hover:bg-slate-400 bg-slate-600 hover:text-white transition-all text-sm"
+                >CLICK TO OFFERS</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next hidden"></div>
+        <div class="swiper-button-prev hidden"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!--end making slider-->
+      <!--start making category-->
+      <div
+        class="category shadow flex flex-wrap flex-row bg-gray-100 h-25 w-full text-center items-center justify-evenly"
+      >
+        <nav class="hidden 2xl:block xl:block lg:block md:block">
+          <ul
+            class="list-none flex flex-row flex-wrap no-underline text-stone-600 text-center items-center xl:gap-10 lg:gap-8 2xl:gap-11 md:gap-5 xl:text-xl lg:text-md md:text-xs"
+          >
+            <li class="pt-2">
+              <a
+                href="#"
+                class="no-underline relative bottom-1 text-stone-800 font-sans hover:text-stone-500"
+              >
+                ECATALOGUE</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="no-underline justify-between text-stone-800 font-sans hover:text-stone-500"
+                >SKIN CARE</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="no-underline justify-between text-stone-800 font-sans hover:text-stone-500"
+                >MAKE-UP</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="no-underline justify-between text-stone-800 font-sans hover:text-stone-500"
+                >FRAGRANCE</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="no-underline justify-between text-stone-800 font-sans hover:text-stone-500"
+                >BATH & BODY</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="no-underline justify-between text-stone-800 font-sans hover:text-stone-500"
+                >ACCESSORIES</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="no-underline justify-between text-stone-800 font-sans hover:text-stone-500"
+                >WELLNESS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="no-underline justify-between text-stone-800 font-sans hover:text-stone-500"
+                >MEN</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="no-underline justify-between text-stone-800 font-sans hover:text-stone-500"
+                >KIDS AND BABY</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div
+          class="swiper myMahshid w-9/12 h-10 flex xl:hidden 2xl:hidden lg:hidden md:hidden"
+        >
+          <div class="swiper-wrapper xl:hidden 2xl:hidden lg:hidden md:hidden">
+            <div
+              class="swiper-slide text-center items-center justify-center text-xs flex"
+            >
+              <a
+                href="#"
+                class="align-middle text-center no-underline items-center justify-center text-stone-800 font-sans hover:text-stone-500"
+                >ECATALOGUE</a
+              >
+            </div>
+            <div
+              class="swiper-slide text-center items-center justify-center text-xs flex"
+            >
+              <a
+                href="#"
+                class="align-middle text-center no-underline items-center justify-center text-stone-800 font-sans hover:text-stone-500"
+                >SKIN CARE</a
+              >
+            </div>
+            <div
+              class="swiper-slide text-center items-center justify-center text-xs flex"
+            >
+              <a
+                href="#"
+                class="align-middle text-center no-underline items-center justify-center text-stone-800 font-sans hover:text-stone-500"
+                >MAKE-UP</a
+              >
+            </div>
+            <div
+              class="swiper-slide text-center items-center justify-center text-xs flex"
+            >
+              <a
+                href="#"
+                class="align-middle text-center no-underline items-center justify-center text-stone-800 font-sans hover:text-stone-500"
+                >FRAGRANCE</a
+              >
+            </div>
+            <div
+              class="swiper-slide text-center items-center justify-center text-xs flex"
+            >
+              <a
+                href="#"
+                class="align-middle text-center no-underline items-center justify-center text-stone-800 font-sans hover:text-stone-500"
+                >BATH & BODY</a
+              >
+            </div>
+            <div
+              class="swiper-slide text-center items-center justify-center text-xs flex"
+            >
+              <a
+                href="#"
+                class="align-middle text-center no-underline items-center justify-center text-stone-800 font-sans hover:text-stone-500"
+                >HAIR</a
+              >
+            </div>
+            <div
+              class="swiper-slide text-center items-center justify-center text-xs flex"
+            >
+              <a
+                href="#"
+                class="align-middle text-center no-underline items-center justify-center text-stone-800 font-sans hover:text-stone-500"
+                >ACCESSORIES</a
+              >
+            </div>
+            <div
+              class="swiper-slide text-center items-center justify-center text-xs flex"
+            >
+              <a
+                href="#"
+                class="align-middle text-center no-underline items-center justify-center text-stone-800 font-sans hover:text-stone-500"
+                >WELLNESS</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination hidden"></div>
+      </div>
+      <!--end making category-->
+      <!--satrt making new product-->
+      <div class="newproduct flex h-25 items-center">
+        <div class="font-sans p-3 w-max m-3 mx-auto text-sm">
+          <h1>What's new</h1>
+        </div>
+        <div class="p-4">
+          <a
+            href=""
+            class="no-underline font-sans text-gray-600 font-bold border-solid hover:bg-gray-100 p-2 rounded-3xl"
+            >VIEW ALL</a
+          >
+        </div>
+      </div>
+      <div class="newproduct2 p-3 flex flex-wrap">
+        <div class="card 2xl:w:2/5 xl:w-2/5 lg:w-2/5 md:w-2/5 sm:w-full mt-1">
+          <a href="#"
+            ><img
+              src="./images/contentImage.jpg"
+              alt=""
+              class="w-full object-cover h-50 rounded-lg"
+          /></a>
+          <a href="#"></a>
+        </div>
+        <div
+          class="card 2xl:w-1/6 xl:w-1/6 lg:1/6 md:w-1/6 sm:w-4/6 flex flex-col border-solid border-gray-300 2xl:m-1 xl:m-1 lg:m-1 md:m-1 sm:mx-auto my-1 rounded-lg shadow-md hover:border-gray-200"
+        >
+          <img
+            src="./images/download (1).jpg"
+            alt=""
+            class="transition-all duration-500 cursor-pointer relative w-full h-30"
+          />
+          <div class="p-3">
+            <h4 class="text-gray-400 text-xs font-sans">NOVAGE+</h4>
+            <h3 class="text-gray-500 text-sm font-sans">
+              Lift + Firm Routine Rich
+            </h3>
+
+            <h4 class="font-sans mt-2">
+              $135.00
+              <span class="line-through text-slate-500 font-sans">$187.00</span>
+              <a
+                href=""
+                class="duration-300 transition-all hover:text-gray-400 mx-2 inline-block p-1 text-gray-500"
+                ><i class="fas fa-shopping-bag text-lg"></i
+              ></a>
+            </h4>
+          </div>
+        </div>
+        <div
+          class="card 2xl:w-1/6 xl:w-1/6 lg:1/6 md:w-1/6 sm:w-4/6 flex flex-col border-solid border-gray-300 2xl:m-1 xl:m-1 lg:m-1 md:m-1 sm:mx-auto my-1 rounded-lg shadow-md hover:border-gray-200"
+        >
+          <img
+            src="./images/download (2).jpg"
+            alt=""
+            class="transition-all duration-500 cursor-pointer relative w-full h-30"
+          />
+          <div class="p-3">
+            <h4 class="text-gray-400 text-xs font-sans">NOVAGE+</h4>
+            <h3 class="text-gray-500 text-sm font-sans">
+              Wrinkle Smooth Routine Mixed
+            </h3>
+            <h4 class="font-sans mt-2">
+              $135.00
+              <span class="line-through text-slate-500 font-sans">$187.00</span>
+              <a
+                href=""
+                class="duration-300 transition-all hover:text-gray-400 mx-2 inline-block p-1 text-gray-500"
+                ><i class="fas fa-shopping-bag text-lg"></i
+              ></a>
+            </h4>
+          </div>
+        </div>
+        <div
+          class="card 2xl:w-1/6 xl:w-1/6 lg:1/6 md:w-1/6 sm:w-4/6 flex flex-col border-solid border-gray-300 2xl:m-1 xl:m-1 lg:m-1 md:m-1 sm:mx-auto my-1 rounded-lg shadow-md hover:border-gray-200"
+        >
+          <img
+            src="./images/download.jpg"
+            alt=""
+            class="transition-all duration-500 cursor-pointer relative w-full h-30"
+          />
+          <div class="p-3">
+            <h4 class="text-gray-400 text-xs font-sans">NOVAGE+</h4>
+            <h3 class="text-gray-500 text-sm font-sans">
+              Bright Intense Routine Mixed
+            </h3>
+            <h4 class="font-sans mt-2">
+              $135.00
+              <span class="line-through text-slate-500 font-sans">$187.00</span>
+              <a
+                href=""
+                class="duration-300 transition-all hover:text-gray-400 mx-2 inline-block p-1 text-gray-500"
+                ><i class="fas fa-shopping-bag text-lg"></i
+              ></a>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <!--end making new product-->
+      <!--start making best offers-->
+      <div class="bestoffers">
+        <div class="font-sans p-3 w-max m-3 mx-auto text-sm">
+          <h1>Best offers</h1>
+        </div>
+        <div class="p-4">
+          <a
+            href=""
+            class="no-underline font-sans text-gray-600 font-bold border-solid hover:bg-gray-100 p-2 rounded-3xl"
+            >VIEW OFFERS</a
+          >
+        </div>
+      </div>
+      <div class="bestoffers2 p-3 flex flex-wrap">
+        <div
+          class="flex flex-wrap flex-row p-5 w-100 h-50 justify-center gap-3"
+        >
+          <div
+            class="card xl:w-1/6 lg:w-1/6 md:w-2/6 sm:w-4/6 flex flex-col border-solid border-gray-300 rounded-lg shadow-md hover:border-gray-200"
+          >
+            <img
+              src="./images/bestoffers/download (1).jpg"
+              alt=""
+              class="transition-all duration-500 cursor-pointer relative w-full h-30"
+            />
+            <div class="p-3">
+              <h4 class="text-gray-400 text-xs font-sans">THE ONE</h4>
+              <h3 class="text-gray-500 text-sm font-sans">
+                High Impact Eye Pencil
+              </h3>
+              <h4 class="font-sans mt-2">
+                $4.99
+                <span class="line-through text-slate-500 font-sans"
+                  >$10.50</span
+                >
+                <a
+                  href=""
+                  class="duration-300 transition-all hover:text-gray-400 mx-2 inline-block p-1 text-gray-500"
+                  ><i class="fas fa-shopping-bag text-lg"></i
+                ></a>
+              </h4>
+              <span href="#" class="bg-black rounded-full inline-block w-5 h-5"
+                ><a href="#"></a
+              ></span>
+              <span
+                href="#"
+                class="bg-yellow-900 rounded-full inline-block w-5 h-5"
+                ><a href="#"></a
+              ></span>
+              <span
+                href="#"
+                class="bg-stone-700 rounded-full inline-block w-5 h-5"
+                ><a href="#"></a
+              ></span>
+              <span
+                href="#"
+                class="bg-orange-900 rounded-full inline-block w-5 h-5"
+                ><a href="#"></a
+              ></span>
+              <span
+                href="#"
+                class="bg-stone-500 rounded-full inline-block w-5 h-5"
+                ><a href="#"></a
+              ></span>
+            </div>
+          </div>
+          <div
+            class="card xl:w-1/6 lg:w-1/6 md:w-2/6 sm:w-4/6 flex flex-col border-solid border-gray-300 shadow-md hover:border-gray-200 rounded-lg"
+          >
+            <img
+              src="./images/bestoffers/download (2).jpg"
+              alt=""
+              class="transition-all duration-500 cursor-pointer relative w-full h-30 roun"
+            />
+            <div class="p-3">
+              <h4 class="text-gray-400 text-xs font-sans">LOVE NATURE</h4>
+              <h3 class="text-gray-500 text-sm font-sans">
+                Purifying Liquid Hand Soap with Organic Green Tea & Cucumber
+              </h3>
+              <h4 class="font-sans mt-2">
+                $4.99
+                <span class="line-through text-slate-500 font-sans">$7.00</span>
+                <a
+                  href=""
+                  class="duration-300 transition-all hover:text-gray-400 mx-2 inline-block p-1 text-gray-500"
+                  ><i class="fas fa-shopping-bag text-lg"></i
+                ></a>
+              </h4>
+            </div>
+          </div>
+          <div
+            class="card xl:w-1/6 lg:w-1/6 md:w-2/6 sm:w-4/6 flex flex-col border-solid border-gray-300 rounded-lg shadow-md hover:border-gray-200"
+          >
+            <img
+              src="./images/bestoffers/download (3).jpg"
+              alt=""
+              class="transition-all duration-500 cursor-pointer relative w-full h-30"
+            />
+            <div class="p-3">
+              <h4 class="text-gray-400 text-xs font-sans">GLACIER</h4>
+              <h3 class="text-gray-500 text-sm font-sans">Eau de Toilette</h3>
+              <br />
+              <h4 class="font-sans mt-2">
+                $12.99
+                <span class="line-through text-slate-500 font-sans"
+                  >$26.00</span
+                >
+                <a
+                  href=""
+                  class="duration-300 transition-all hover:text-gray-400 mx-2 inline-block p-1 text-gray-500"
+                  ><i class="fas fa-shopping-bag text-lg"></i
+                ></a>
+              </h4>
+            </div>
+          </div>
+          <div
+            class="card xl:w-1/6 lg:w-1/6 md:w-2/6 sm:w-4/6 flex flex-col border-solid border-gray-300 rounded-lg shadow-md hover:border-gray-200"
+          >
+            <img
+              src="./images/bestoffers/download.jpg"
+              alt=""
+              class="transition-all duration-500 cursor-pointer relative w-full h-30"
+            />
+            <div class="p-3">
+              <h4 class="text-gray-400 text-xs font-sans">THE ONE</h4>
+              <h3 class="text-gray-500 text-sm font-sans">Browcara</h3>
+              <h4 class="font-sans mt-2">
+                $135.00
+                <span class="line-through text-slate-500 font-sans"
+                  >$187.00</span
+                >
+                <a
+                  href=""
+                  class="duration-300 transition-all hover:text-gray-400 mx-2 inline-block p-1 text-gray-500"
+                  ><i class="fas fa-shopping-bag text-lg"></i
+                ></a>
+              </h4>
+              <span
+                href="#"
+                class="bg-amber-800 rounded-full inline-block w-5 h-5"
+                ><a href="#"></a
+              ></span>
+              <span
+                href="#"
+                class="bg-stone-600 rounded-full inline-block w-5 h-5"
+                ><a href="#"></a
+              ></span>
+              <span
+                href="#"
+                class="bg-stone-500 rounded-full inline-block w-5 h-5"
+                ><a href="#"></a
+              ></span>
+            </div>
+          </div>
+          <div
+            class="card 2xl:w-1/5 xl:w-1/5 lg:w-1/5 hidden lg:block xl:block 2xl:block md:hidden"
+          >
+            <a href="#"
+              ><img
+                src="./images/bestoffers/contentImage.jpg"
+                alt=""
+                class="w-full rounded-lg"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!--end making best offers-->
+      <!--start making content-->
+      <div class="content1 p-3 flex flex-wrap">
+        <div class="2xl:w-2/4 xl:w-2/4 lg:w-2/4 md:w-full sm:w-full h-30">
+          <img
+            src="./images/bestoffers/contentImage (1).jpg"
+            alt=""
+            class="w-full h-30 cursor-pointer"
+          />
+        </div>
+        <div
+          class="bg-gray-200 h-30 2xl:w-2/4 xl:w-2/4 lg:w-2/4 md:w-full sm:w-full text-center items-center justify-center 2xl:py-28 xl:py-14 md:py-5 sm:py-28 py-28"
+        >
+          <h1 class="text-center font-sans py-5">
+            Stock up on this season’s essentials
+          </h1>
+          <p
+            class="p-3 text-center 2xl:text-xl xl:text-xl text-slate-500 md:text-lg font-sans mb-3"
+          >
+            From fresh-scented body sprays to pastel coloured nail polishes and
+            volumising dry shampoo, we rounded up must-have products to help you
+            look and feel utterly refreshed this spring!
+          </p>
+          <a
+            href="#"
+            class="border-solid p-2 rounded-3xl no-underline font-sans text-black hover:bg-white"
+            >SEE OUR PICKS</a
+          >
+        </div>
+      </div>
+      <div class="content2">
+        <div>
+          <svg
+            data-testid="Presentation-beauty-edit-logo"
+            xmlns="http://www.w3.org/2000 svg"
+            width="150"
+            height="80.009"
+            class="w-30 h-30 text-center block items-center mx-auto"
+            viewBox="0 0 150 80.009"
+          >
+            <g transform="translate(0 -74.389)">
+              <path
+                d="M1002.428,694.189h6.971l.662,2.2-.19.106a9.045,9.045,0,0,0-.778-1.112,2.609,2.609,0,0,0-.643-.549,2.012,2.012,0,0,0-.733-.25,10.325,10.325,0,0,0-1.366-.061h-1.414v4.2h.717a5.982,5.982,0,0,0,1.071-.068,1.567,1.567,0,0,0,.6-.256,1.246,1.246,0,0,0,.391-.5,3.848,3.848,0,0,0,.236-.907h.191v3.8h-.191a3.754,3.754,0,0,0-.25-.907,1.294,1.294,0,0,0-.383-.494,1.5,1.5,0,0,0-.609-.26,5.729,5.729,0,0,0-1.053-.071h-.717v3.373a1.125,1.125,0,0,0,.218.827,1.488,1.488,0,0,0,.922.193h.844a3.293,3.293,0,0,0,1.843-.419,6.283,6.283,0,0,0,1.482-1.834l.2.085-.513,2.507h-7.5v-.184c.525-.066.851-.188.974-.369a2.761,2.761,0,0,0,.188-1.306v-5.895a2.786,2.786,0,0,0-.184-1.3c-.126-.185-.453-.308-.978-.375Z"
+                transform="translate(-910.79 -563.141)"
+              ></path>
+              <path
+                style="fill: none"
+                d="M1131.814,697.72a4.722,4.722,0,0,0-2.405-.539c-.737,0-1.178.1-1.324.29a1.457,1.457,0,0,0-.1.717v6.985a1.77,1.77,0,0,0,.085.733.891.891,0,0,0,.527.253,4.266,4.266,0,0,0,.966.1,4.836,4.836,0,0,0,1.634-.271,3.382,3.382,0,0,0,1.253-.756,3.851,3.851,0,0,0,.9-1.486,5.883,5.883,0,0,0,.324-1.971,6.033,6.033,0,0,0-.449-2.358A3.431,3.431,0,0,0,1131.814,697.72Z"
+                transform="translate(-1024.865 -565.859)"
+              ></path>
+              <path
+                d="M1109.625,695.847a4.1,4.1,0,0,0-2.473-2.062,7.417,7.417,0,0,0-2.217-.288c-.269,0-.7.011-1.3.033q-.775.03-1.24.03h-1.837v.182c.525.067.852.189.978.375a2.781,2.781,0,0,1,.183,1.3v5.895a2.774,2.774,0,0,1-.187,1.307q-.186.271-.974.369v.184h1.619l2.246.071a8.614,8.614,0,0,0,3.067-.454,3.952,3.952,0,0,0,1.862-1.469,5.2,5.2,0,0,0,.846-3.015A5.119,5.119,0,0,0,1109.625,695.847Zm-1.2,4.549a3.844,3.844,0,0,1-.9,1.486,3.377,3.377,0,0,1-1.253.756,4.835,4.835,0,0,1-1.634.271,4.292,4.292,0,0,1-.966-.1.892.892,0,0,1-.527-.253,1.772,1.772,0,0,1-.084-.733V694.84a1.458,1.458,0,0,1,.1-.717c.146-.194.588-.29,1.324-.29a4.725,4.725,0,0,1,2.405.538,3.431,3.431,0,0,1,1.405,1.695,6.036,6.036,0,0,1,.449,2.359A5.868,5.868,0,0,1,1108.427,700.4Z"
+                transform="translate(-999.946 -562.511)"
+              ></path>
+              <path
+                d="M1223.382,694.372c-.527.067-.852.188-.975.371a2.785,2.785,0,0,0-.187,1.3v5.895a2.828,2.828,0,0,0,.183,1.3q.19.275.98.373v.184h-3.669v-.184q.79-.1.975-.369a2.8,2.8,0,0,0,.187-1.307v-5.895a2.819,2.819,0,0,0-.183-1.3c-.127-.185-.452-.308-.979-.375v-.182h3.669Z"
+                transform="translate(-1108.212 -563.141)"
+              ></path>
+              <path
+                d="M1270.457,700.724v-.184c.524-.066.851-.188.977-.369a2.719,2.719,0,0,0,.192-1.307v-7.408h-1.718a2.945,2.945,0,0,0-.832.085,1.327,1.327,0,0,0-.61.461,18.75,18.75,0,0,0-1.024,1.579l-.2-.071L1268,690.8h.192a.7.7,0,0,0,.394.239,3.6,3.6,0,0,0,.822.07h5.782a3.6,3.6,0,0,0,.818-.07.709.709,0,0,0,.394-.239h.188l.755,2.709-.2.071a16.54,16.54,0,0,0-1.125-1.7,1.309,1.309,0,0,0-.847-.409c-.079-.009-.241-.014-.485-.014h-1.718v7.408a2.842,2.842,0,0,0,.182,1.3c.128.183.453.307.981.373v.184Z"
+                transform="translate(-1151.4 -560.064)"
+              ></path>
+              <path
+                style="fill: none"
+                d="M682.475,393.075c1.312.443,4.328,1.143,6.472-.793a6.335,6.335,0,0,0,2.214-2.839l.486-1.321c.107-.366.2-.757.282-1.183a2.672,2.672,0,0,0-.36-1.457,1.733,1.733,0,0,0-.967-.7c-.033,0-.07,0-.1-.007a2.539,2.539,0,0,0-.263-.016c-.03,0-.063,0-.094,0-3.781.126-8.32,8.062-8.32,8.062l.653.248Z"
+                transform="translate(-619.493 -282)"
+              ></path>
+              <path
+                style="fill: none"
+                d="M1328.725,320.371l.032-.156-.075.146Z"
+                transform="translate(-1207.219 -223.354)"
+              ></path>
+              <g transform="translate(0 74.389)">
+                <path
+                  d="M43.869,160.4h0a12.087,12.087,0,0,0-1.85.292c-2.266.421-8.565,1.966-18.728,7.24,11.206-8,16.843-13.909,19.615-18.076.282-.35.533-.684.742-.995,0,0,2.157-3.011,1.8-5.932a2.72,2.72,0,0,0-.3-1.171c-.011-.029-.023-.05-.034-.074-.04-.1-.082-.192-.13-.286a4.393,4.393,0,0,0-3.606-2.557c-4.222-.922-16.024,5.4-25.949,11.391V139.341a10.75,10.75,0,0,0,0-3.464v-.14l-.029.006c-.67-2.734-3.134-1.095-3.134-1.095-1.228,1.151,0,4.692,0,4.693.313,2.461.74,6.464,1.1,12.141C5.92,156.06,0,160.108,0,160.108l.723.723s5.571-3.852,12.72-8.166c.234,3.935.435,8.61.546,14.075l.036.565c.008.143,1.032,21.187,1.117,21.932l.289,1.134V151.478c9.707-5.727,21.5-11.721,26.381-10.354,0,0,10.825,1.245-16.863,24.03l-4.037,4.04H21.92s27.174-12.126,33.542-4.208a11.091,11.091,0,0,1-.061,9.69c-.594.861-1.261,1.8-1.931,2.687a13.186,13.186,0,0,1-3.287,3.267,24.053,24.053,0,0,1-2.775,2.2c-.431.276-.946.6-1.538.972l-.071.04c-11.027,6.287-41.35,22.5-45.224,22.972l-.009.288L2.6,208.706s19.478-10.752,31.259-16.9a91.74,91.74,0,0,0,8.406-4.122c.034-.018.434-.239,1.084-.614.926-.534,1.87-1.1,2.812-1.7,3.9-2.469,9.488-6.457,10.724-9.711h0a10.511,10.511,0,0,0,1.811-7.9S58.645,158.27,43.869,160.4Z"
+                  transform="translate(0 -128.697)"
+                ></path>
+                <path
+                  d="M748.8,83.621c-.18-.219-.541.036-1.947.682s-14.276,4.905-14.276,4.905l-7.642,2.127c.035-.069.058-.11.058-.11l3.257-7.641c2.056-5.3.253-8.186.253-8.186-.9-2.272-2.668,0-2.668,0a54.236,54.236,0,0,0-2.09,5.879l-1.081,5.731a49.017,49.017,0,0,1-1.26,5.2l-5.157,1.217-.757.25v2.272l1.982-.683,3.123-.918-8.117,15.01c-2.018,4.3-3.128,3.636-3.128,3.636-.916-.7-.188-7.513.336-10.269.371-1.447.1-1.941-.216-2.085a.648.648,0,0,0-.577,0c-.513-.032-1.091,1.393-1.574,2.99-.609,1.73-3.171,8.189-4.564,11.881,0,0-1.832,2.312-2.975-.459a57.458,57.458,0,0,1-1.7-9.454c.006-.255.017-.5.032-.741a48.938,48.938,0,0,1,1.983-6.275c1.045-2.772-.289-2.844-.289-2.844-1.218-.128-1.685,1.12-1.893,1.872v0c-.006.02-.014.051-.025.1a1.716,1.716,0,0,1-.136.445,3.845,3.845,0,0,0-.093.707,59.179,59.179,0,0,0-1.044,7.835c.143,1.2-1.153,7.429-1.153,7.429a10.059,10.059,0,0,1-1.371,3.352c-1.625,3.02-2.457,2.394-2.787,1.842-.488-1.069-1.219-2.932-2.316-6.15a3.474,3.474,0,0,0-1.53-1.9s-.44-.333-.663.245c0,.006,0,.014-.006.02-.735,1.478-2.37,8.784-2.37,8.784-1.318,3.584-3.1,4.81-4.343,5.209a3.388,3.388,0,0,1-.813-.037,4.212,4.212,0,0,1-1.831-1.884l-.577-1.513c-.007-.022-.014-.049-.02-.072-.785-3.143.6-9.612,1.074-10.942a23.216,23.216,0,0,1,2.6-3.99,33.191,33.191,0,0,1,2.549-2.253c1.781-1.542,1.082.373,2.379.076a1.3,1.3,0,0,0,1.028-.985c-.019-2.337-1.381-2.266-1.8-2.19.337-.139-2.2-.426-3.384.754a9.194,9.194,0,0,0-2.219,2.286c-.71,1.224-8.957,18.508-10.839,22.46-1.835,2.113-3.165,1.373-3.165,1.373-6.24-2.885-3.914-14.248-3.751-15.013,2.056.547,8.01,1.543,10.011-4.563.064-.118.1-.181.1-.181a9.742,9.742,0,0,0,.883-3.527h0s1.042-3.58-4.1-3.722c0,0-4.327.684-7.432,8.127a11.456,11.456,0,0,0-.939,3.511c-.481,2.374-1.181,7.385.436,11.16.008.035.014.067.021.1,0,0,1.622,6.072,5.163,6.058a4.62,4.62,0,0,0,2.962-1.3,6.364,6.364,0,0,0,.866-1.224h0l0,0c1.41-2.356,3.59-7.034,3.59-7.034l1.823-4.151.854-1.641c0,.026-.009.057-.013.086a4.657,4.657,0,0,0-.159,1.349,27.845,27.845,0,0,0,.211,5.582c1.484,5.909,5.813,4.144,5.813,4.144,2.6-.832,4.685-8.627,4.685-8.627l.121-.33c.89-2.193,2.279-.392,2.55-.006l.014.019c.011.018.019.032.025.041a12.527,12.527,0,0,1,.822,1.461c.008.03,1.022,3.679,2.492,3.074a1.235,1.235,0,0,0,.7-.346l.035-.017c-.007,0-.018.009-.035.017a1.08,1.08,0,0,0,.092-.087,14.759,14.759,0,0,0,2.938-4.129c1-1.676,1.351-4.918,1.426-5.748a19.339,19.339,0,0,0,2.589,6.8c.452.885.959,1.556,1.5,1.687,0,0,1.121,1.025,2.234-2.7h0s2.7-7.749,2.849-8.218a6.572,6.572,0,0,1,1.586-1.843,18.477,18.477,0,0,1-.181,2.49,15.687,15.687,0,0,0,.047,2.349h0v0a4.107,4.107,0,0,0,.818,2.406s.508.972,1.155.829a3.071,3.071,0,0,0,.695-.516h0a6.935,6.935,0,0,0,1.4-1.945l.017-.028c1-1.675,2.784-4.641,2.861-4.8l5.423-10.825,0-.005c-.006.022-7.2,24.258,0,29.238a4.675,4.675,0,0,0,3.364-4.544A18.21,18.21,0,0,0,724,120.1l1.262-6.725s1.284-2.607.668-3.516a1.264,1.264,0,0,0-1.367.649,3.056,3.056,0,0,0-.4,1.9s-.653,7.8-1.736,10.442a8.919,8.919,0,0,1-.468.761s-3.112,3.648-3.342-6.138v-.008c0-.032.06-2.142.2-4.9a60.809,60.809,0,0,1,1.36-8.4h0a67.356,67.356,0,0,1,3.788-10.8l6.416-1.881,11.753-3.823s2.378-.286,2.884-.286,3.461-.11,3.785-1.478S748.981,83.834,748.8,83.621Zm-79.158,19.145c.031,0,.064,0,.094,0a2.528,2.528,0,0,1,.263.016c.034,0,.07,0,.1.007a1.732,1.732,0,0,1,.967.7,2.672,2.672,0,0,1,.36,1.458c-.08.425-.175.817-.282,1.183l-.486,1.321a6.335,6.335,0,0,1-2.214,2.839c-2.144,1.936-5.16,1.237-6.472.793h0l-.653-.248S665.862,102.891,669.643,102.765ZM720.5,97.017l-.044-.01.075-.146Z"
+                  transform="translate(-598.994 -74.389)"
+                ></path>
+                <path
+                  d="M1426.416,302.385h0c.363-.7.653-1.233.653-1.233,1.3-3.2-.938-3.169-1.513-2.954s-1.154,4.075-1.262,5.552a11.321,11.321,0,0,1-1.226,3.535s-2.416,5.117-3.731,6.2c0,0-1.173,1.552-1.749-.219a23,23,0,0,1-.613-5.009,62.63,62.63,0,0,1,.468-6.453c.289-.937.686-3.065-.793-3.1,0,0-1.73-.614-1.84,2.7l.758,4.473s.4,7.641,1.622,9.084c0,0,1.334,2.037,2.306,1.018a7.874,7.874,0,0,0,1.912-3.587l1.693-3.7c.113-.246.181.254.181.254l-.192,2.143c-.052.452-.155,1.436-.255,2.856v.009h0a108.52,108.52,0,0,0,.06,15.219s1.167,14.492,2.451,19.179c.594,2.165.913,3.328,1.085,3.955v0h0l.2.727s.494,2.178,1.544.937c.975-.227-.709-4.975-.709-4.975C1419.782,317.131,1426.416,302.385,1426.416,302.385Z"
+                  transform="translate(-1285.475 -277.663)"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <p class="text-center p-2 text-gray-500">
+            We believe beauty is not only products, but also inspiration and
+            growth. This is where we share facts,<br />
+            tips and how to’s to boost your confidence and help you stay on top
+            of trends.
+          </p>
+        </div>
+        <div class="flex flex-wrap flex-row h-30 justify-evenly text-center">
+          <div
+            class="flex flex-col flex-wrap 2xl:w-2/5 xl:w-2/5 lg:w-2/5 md:w-2/5 sm:w-full h-30 items-center gap-5 mb-5 justify-center"
+          >
+            <img
+              src="./images/content/contentImage (2).jpg"
+              alt=""
+              class="w-full h-30 cursor-pointer hover:opacity-50 rounded-lg"
+            />
+            <div>
+              <h3 class="text-center font-sans">HEALTH & BODY</h3>
+              <p class="text-center font-sans mb-4 mt-4">
+                Enhance your Novage+ routine with Novage+ Signature Energizing
+                Facial Massage
+              </p>
+              <a
+                href="#"
+                class="border-solid p-2 rounded-full no-underline text-black font-sans hover:bg-gray-200 transition-all duration-50"
+                >READ MORE</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col flex-wrap 2xl:w-2/5 xl:w-2/5 lg:w-2/5 md:w-2/5 sm:w-full h-30 items-center gap-5 mb-5 justify-center"
+          >
+            <img
+              src="./images/content/contentImage.jpg"
+              alt=""
+              class="w-full h-30 cursor-pointer hover:opacity-50 rounded-lg"
+            />
+            <div>
+              <h3 class="text-center font-sans">HEALTH & BODY</h3>
+              <p class="text-center font-sans mb-4 mt-4">
+                A new level of skin care
+              </p>
+              <a
+                href="#"
+                class="border-solid p-2 rounded-full no-underline text-black font-sans hover:bg-gray-200 transition-all duration-50"
+                >READ MORE</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end making content-->
+      <!--start making Site guide-->
+      <div
+        class="bg-violet-50 w-full h-max flex text-center items-center flex-wrap"
+      >
+        <div
+          class="2xl:basis-1/3 xl:basis-1/3 lg:basis-1/3 md:basis-1/3 sm:basis-full basis-full mt-1 2xl:text-lg xl:text-lg lg:text-lg md:text-sm sm:text-sm text-sm"
+        >
+          <img src="./images/Guide/download.svg" alt="" />
+          <h2 class="text-center font-sans py-4">FREE shipping</h2>
+          <p class="text-center font-sans py-4">
+            As a VIP, you always get free delivery on orders over £45
+          </p>
+        </div>
+        <div
+          class="2xl:basis-1/3 xl:basis-1/3 lg:basis-1/3 md:basis-1/3 sm:basis-full basis-full 2xl:text-lg xl:text-lg lg:text-lg md:text-sm sm:text-sm text-sm"
+        >
+          <img src="./images/Guide/download (1).svg" alt="" />
+          <h2 class="text-center font-sans py-2">Get rewarded for shopping</h2>
+          <p class="text-center font-sans py-2">
+            For every purchase, you’ll earn Beauty Reward Points which can
+            <br />
+            easily be swapped for free products
+          </p>
+        </div>
+        <div
+          class="2xl:basis-1/3 xl:basis-1/3 lg:basis-1/3 md:basis-1/3 sm:basis-full basis-full mt-4 2xl:text-lg xl:text-lg lg:text-lg md:text-sm sm:text-sm text-sm"
+        >
+          <img src="./images/Guide/download (2).svg" alt="" />
+          <h2 class="text-center font-sans py-2">Personal beauty advice</h2>
+          <p class="text-center font-sans py-2">
+            If you feel like it, just reach out to your own Independent <br />
+            Oriflame Brand Partner who can give you personal beauty advise and
+            recommendations.
+          </p>
+        </div>
+        <div
+          class="w-full h-max mb-10 hidden 2xl:block xl:block lg:block md:block sm:hidden"
+        >
+          <a
+            href="#"
+            class="border-solid rounded-full no-underline text-black font-sans hover:bg-gray-200 transition-all duration-50 p-3"
+            >BECOME A VIP CUSTOMER</a
+          >
+        </div>
+      </div>
+      <!--end making Site guide-->
+      <!--start making text1-->
+      <div class="text1 p-3">
+        <h1 class="text-center font-sans">A different view on beauty</h1>
+        <p class="items-center text-center font-sans pt-3 text-gray-400">
+          Because we are from Sweden we have a different – and holistic – view
+          on beauty. It’s not only <br />
+          about how you look, but how you live, feel and act. To us beauty is a
+          way of life: to be healthy, <br />
+          enjoy beautiful skin, express yourself and have fun. That’s beauty by
+          Sweden – our way of helping <br />
+          you live a healthier, more beautiful life.
+        </p>
+        <hr class="w-14 h-1 rounded-lg mx-auto bg-cyan-600 mt-2" />
+      </div>
+      <!--end making text1-->
+      <!--start making top brands-->
+      <div class="topbrands mt-10">
+        <h1 class="text-center font-sans">Our top brands</h1>
+        <div class="flex flex-row flex-wrap justify-center">
+          <img
+            src="./images/top brands/contentImage (1).jpg"
+            alt=""
+            class="w-1/5 rounded-full cursor-pointer p-3"
+          />
+          <img
+            src="./images/top brands/contentImage (2).jpg"
+            alt=""
+            class="w-1/5 rounded-full cursor-pointer p-3"
+          />
+          <img
+            src="./images/top brands/contentImage (3).jpg"
+            alt=""
+            class="w-1/5 rounded-full cursor-pointer p-3"
+          />
+          <img
+            src="./images/top brands/contentImage.jpg"
+            alt=""
+            class="w-1/5 rounded-full cursor-pointer p-3"
+          />
+        </div>
+        <div class="text-center align-middle items-center mt-5">
+          <a
+            href="#"
+            class="border-solid rounded-full no-underline text-black font-sans hover:bg-gray-200 transition-all duration-50 p-3"
+            >view All brands</a
+          >
+        </div>
+      </div>
+      <!--end making top brands-->
+      <!--start making video-->
+      <div class="video p-5 h-30 mt-10">
+        <video
+          class="2xl:w-3/4 lg:w-3/4 block max-w-full text-center mx-auto"
+          loop
+          controls
+        >
+          <source src="./Video/download.mp4" type="video/mp4" />
+        </video>
+        <div class="text-center m-10">
+          <a
+            href="#"
+            class="border-solid rounded-full no-underline text-black font-sans hover:bg-gray-200 transition-all duration-50 p-3"
+            >DISCOVER BEAUTY BY SWEDEN</a
+          >
+        </div>
+      </div>
+      <!--end making top video-->
+      <!--start making text2-->
+      <div class="text2 p-3">
+        <h1 class="text-center font-sans">The standards we live by</h1>
+        <p class="items-center text-center font-sans pt-3 text-gray-400">
+          Since the very beginning, we have always considered nature to be an
+          important part of how we do <br />
+          things and have built our reputation upon offering people safe,
+          reliable products that respect our <br />
+          environment. Our commitment to develop beauty products you can believe
+          in and trust is defined <br />
+          by our product standards.
+        </p>
+      </div>
+      <div
+        class="flex flex-wrap flex-row h-30 justify-items-center justify-center"
+      >
+        <img
+          src="./images/text2/contentImage (1).jpg"
+          alt=""
+          class="2xl:w-1/6 xl:w-1/6 lg:w-1/6 md:w-1/3 sm:w-2/6 w-2/6"
+        />
+        <img
+          src="./images/text2/contentImage (2).jpg"
+          alt=""
+          class="2xl:w-1/6 xl:w-1/6 lg:w-1/6 md:w-1/3 sm:w-2/6 w-2/6"
+        />
+        <img
+          src="./images/text2/contentImage (3).jpg"
+          alt=""
+          class="2xl:w-1/6 xl:w-1/6 lg:w-1/6 md:w-1/3 sm:w-2/6 w-2/6"
+        />
+        <img
+          src="./images/text2/contentImage (4).jpg"
+          alt=""
+          class="2xl:w-1/6 xl:w-1/6 lg:w-1/6 md:w-1/3 sm:w-2/6 w-2/6"
+        />
+        <img
+          src="./images/text2/contentImage (5).jpg"
+          alt=""
+          class="2xl:w-1/6 xl:w-1/6 lg:w-1/6 md:w-1/3 sm:w-2/6 w-2/6"
+        />
+        <img
+          src="./images/text2/contentImage.jpg"
+          alt=""
+          class="2xl:w-1/6 xl:w-1/6 lg:w-1/6 md:w-1/3 sm:w-1/3 w-2/6"
+        />
+      </div>
+      <!--end making top text2-->
+      <!--start making top footer-->
+      <hr class="bg-gray-300 mt-2" />
+      <div class="footer1 flex text-center items-center flex-wrap">
+        <div class="basis-2/5">
+          <h2 class="font-sans">Follow Us</h2>
+          <a href=""
+            ><i
+              class="fab fa-instagram text-3xl text-pink-600 font-bold hover:text-gray-600 p-2"
+            ></i
+          ></a>
+          <a href=""
+            ><i
+              class="fab fa-facebook-square text-3xl text-blue-600 font-bold hover:text-gray-600 p-2"
+            ></i
+          ></a>
+          <a href=""
+            ><i
+              class="fab fa-youtube text-3xl text-red-600 font-bold hover:text-gray-600 p-2"
+            ></i
+          ></a>
+        </div>
+        <div
+          class="basis-3/5 xl:text-start 2xl:text-start lg:text-start md:text-start sm:text-start text-start"
+        >
+          <h2 class="font-sans mt-2">NewSletter</h2>
+          <p class="font-sans font-medium text-sm">
+            Sign up today and be the first to get our best deals, latest news
+            and beauty tips
+          </p>
+          <label
+            for="input-group-1"
+            class="block text-sm pt-3 text-gray-500 dark:text-white font-light"
+          >
+            Enter Your Email*</label
+          >
+          <div class="relative mb-6">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            ></div>
+            <input
+              type="text"
+              id="input-group-1"
+              class="text-sm border-b-2 border-l-0 border-t-0 border-r-0 block w-2/3 2xl:w-1/3 xl:w-1/3 md:w-2/3 lg:w-1/3 pl-10 p-2.5"
+            />
+          </div>
+          <button
+            href=""
+            class="p-2 rounded-full no-underline border-0 text-gray-500 w-1/3 2xl:w-1/3 xl:w-1/3 md:w-1/3 lg:w-1/3 cursor-pointer"
+          >
+            SUBSCRIBE
+          </button>
+        </div>
+      </div>
+      <div
+        class="footer2 flex text-center items-center bg-gray-200 h-60 mt-2 font-sans flex-wrap 2xl:flex-row xl:flex-row lg:flex-row md:flex-wrap sm:flex"
+      >
+        <div
+          class="basis-1/3 flex flex-wrap justify-items-center items-center text-center justify-center 2xl:w-1/4 xl:w-1/4 lg:w-1/4 md:w-full sm:w-full w-full"
+        >
+          <ul class="list-none no-underline p-0">
+            <li class="mb-5 mx-auto p-0">
+              <a href="#" class="no-underline font-bold text-black"
+                >CORPORATE INFO</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#" class="no-underline text-slate-500">Work with us</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="no-underline text-slate-500">Who we are</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="no-underline text-slate-500">Sustainability</a>
+            </li>
+            <li>
+              <a href="#" class="no-underline text-slate-500"
+                >Investor Relstions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="flex basis-1/3 flex-wrap justify-items-center items-center text-center justify-center 2xl:w-1/4 xl:w-1/4 lg:w-1/4 max-w-full"
+        >
+          <ul class="list-none no-underline p-0">
+            <li class="mb-5 mx-auto p-0">
+              <a href="#" class="no-underline font-bold text-black"
+                >SUPPORT / HELP</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#" class="no-underline text-slate-500">Support Centre</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="no-underline text-slate-500"
+                >Track your order</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#" class="no-underline text-slate-500"
+                >Claims & returns</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="flex basis-1/3 flex-wrap justify-items-center items-center text-center justify-center 2xl:w-1/4 xl:w-1/4 lg:w-1/4 max-w-full"
+        >
+          <ul class="list-none no-underline p-0">
+            <li class="mb-5 mx-auto p-0">
+              <a href="#" class="no-underline font-bold font-sans text-black"
+                >DISCOVER</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#" class="no-underline text-slate-500">join us</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="no-underline text-slate-500">eCatalogue</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--end making top footer-->
+      <!--start making top lasttext-->
+      <div class="text3 p-3">
+        <p class="items-center text-center font-sans pt-3 text-gray-400">
+          Oriflame is a leading beauty company selling direct. We are present in
+          more than 60 countries,<br />
+          of which we are the market leader in more than a half. Oriflame has
+          its origin in Sweden with corporate<br />
+          offices in Switzerland. We offer a wide range of high-quality beauty
+          products as well as a unique<br />
+          opportunity to join our sales force and start your own business.
+        </p>
+        <p class="text-center mt-5 text-slate-600 font-sans">
+          © 2020 Copyright: MahshidSaed
+        </p>
+      </div>
+      <!--end making top lasttext-->
+    </div>
+    <!--end making Oriflame project-->
+    <script src="./swiper/swiper-bundle.min.js" ></script>
+    <script>
+      // Burger menus
+      document.addEventListener("DOMContentLoaded", function () {
+        // open
+        const burger = document.querySelectorAll(".navbar-burger");
+        const menu = document.querySelectorAll(".navbar-menu");
+
+        if (burger.length && menu.length) {
+          for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+
+        // close
+        const close = document.querySelectorAll(".navbar-close");
+        const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+        if (close.length) {
+          for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+
+        if (backdrop.length) {
+          for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+      });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".myMahshid", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
